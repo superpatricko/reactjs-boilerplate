@@ -63,7 +63,7 @@ gulp.task('css', function() {
 		.pipe(gulp.dest(config.paths.dist + '/css'));
 });
 
-// Migrates images to dist folder
+// Migrates images to dist folder (Need at least one image in images folder for gulp)
 // Note that I could even optimize my images here
 gulp.task('images', function () {
 	gulp.src(config.paths.images)
